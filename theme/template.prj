@@ -1,0 +1,8 @@
+\ x : Foo -> Html =
+{
+  case x of
+    Foo ->
+      <p>Hello, Foo!</p>
+    Bar ->
+      <p>Hello, Bar!</p>
+}

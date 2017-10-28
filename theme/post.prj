@@ -1,0 +1,16 @@
+\ post : Post -> Html =
+<h1>{{ post.title }}</h1>
+<div class="meta">
+  <span class="meta-key">Published:</span>
+  <span class="meta-value date">{{ post.date.is }}</span>
+</div>
+{
+  each post.words \nwords ->
+    <div class="meta">
+      <span class="meta-key">Words:</span>
+      <span class="meta-value">{{ nwords }}</span>
+    </div>
+}
+<div>
+  { post.body }
+</div>

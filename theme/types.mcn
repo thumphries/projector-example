@@ -1,0 +1,36 @@
+-- machinator @ v2
+
+record SiteRoot = {
+    url : String
+  }
+
+record CurrentYear = {
+    is : String
+  }
+
+record Date = {
+    is : String
+  }
+
+record Url = {
+    is : String
+  }
+
+record Frame = {
+    root : SiteRoot
+  , title : String
+  , year : CurrentYear
+  }
+
+record Page = {
+    title : String
+  , body : Html
+  }
+
+record Post = {
+    title : String
+  , date : Date
+  , url : Url
+  , words : List String
+  , body : Html
+  }

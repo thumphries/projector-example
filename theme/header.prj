@@ -1,0 +1,11 @@
+\ root : SiteRoot -> Html =
+<header>
+  <div id="logo">
+    <span><a href="{{ root.url }}index.html">Tim Humphries</a></span>
+  </div>
+  <nav>
+    <span><a href="{{ root.url }}index.html">Blog</a></span>
+    <span><a href="{{ root.url }}contact.html">Contact</a></span>
+    <span><a href="{{ root.url }}about.html">About</a></span>
+  </nav>
+</header>

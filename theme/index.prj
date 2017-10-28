@@ -1,0 +1,23 @@
+\  root : SiteRoot
+-> year : CurrentYear
+-> posts : List Post
+-> Html =
+{
+  frame (Frame root "Tim Humphries" year)
+    <div>
+      <h2>Recent blog posts</h2>
+      <ul>
+        {
+          each posts \post ->
+            <li>
+              <span class="date">{{ post.date.is }}</span>
+              <a href="{{ post.url.is }}">{{ post.title }}</a>
+            </li>
+        }
+      </ul>
+      <p>
+        If you enjoy these posts, you may wish to subscribe to the
+        <a href="{{ root.url }}posts/atom.xml">RSS</a> feed.
+      </p>
+    </div>
+}

@@ -1,0 +1,4 @@
+\ year : CurrentYear -> Html =
+<footer>
+  &copy; {{ year.is }} Tim Humphries
+</footer>

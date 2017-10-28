@@ -1,0 +1,16 @@
+\ frame : Frame -> body : Html -> Html =
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="shortcut icon" href="{{ frame.root.url }}favicon.ico"/>
+    <link rel="stylesheet" href="{{ frame.root.url }}assets/index.css"/>
+    <title>{{ frame.title }}</title>
+  </head>
+  <body>
+    { header frame.root }
+    <div id="container">
+      { body }
+    </div>
+    { footer frame.year }
+  </body>
+</html>
